@@ -129,7 +129,7 @@ Antes de escribir guidelines, levantar lo que el usuario ya trae en la cabeza, c
 
 **Input — un solo mensaje con estas preguntas.** Todas se pueden saltar y "no sé" es una respuesta válida. No se pregunta de a una.
 
-1. **La voz.** Si la marca fuera un personaje, real o ficticio, ¿quién sería? Y lo más importante: qué tomas de él y qué no. Ejemplo: en Cornershop era Michael Scott, por el humor de chiste de papá, lo buena persona y lo gran vendedor que era; no su torpeza.
+1. **La voz.** Si la marca fuera un personaje, real o ficticio, ¿quién sería? Y lo más importante: qué tomas de él y qué no. Ejemplo: la voz de Cornershop se pensó como Michael Scott, por el humor de chiste de papá, lo buena persona y lo gran vendedor que era; no su torpeza.
 2. **Color.** Colores que te gustaría ver y colores que no quieres por ningún motivo, con la razón si la hay.
 3. **Marcas que admiras**, de cualquier rubro, y qué les admiras.
 4. **Referencias sueltas:** una foto, un lugar, una tienda, una película, un disco, una frase, un objeto. Lo que sea.
@@ -222,7 +222,7 @@ Con las referencias del usuario (o sin ellas), Claude propone lo de abajo. La pa
 
 # Paso 5 — Logo
 
-**Claude no diseña el logo** (ni SVGs ni mockups propios de logo). Lo diseñan Claude Design o Figma Make a partir del brief de Claude, y el usuario cierra en Figma. Antes del brief se decide qué tipo de logo es.
+**Claude no diseña el logo** (ni SVGs ni mockups propios de logo). Lo diseña una herramienta de diseño (Claude Design, Figma Make u otra) o un diseñador a partir del brief de Claude, y el usuario lo cierra en su herramienta. Antes del brief se decide qué tipo de logo es.
 
 ## 5a — Tipo de logo
 
@@ -255,7 +255,7 @@ Claude apoya con:
 
 - Dirección conceptual basada en los pillars y en el tipo elegido: 3-5 conceptos, cada uno con la historia de dónde sale y qué cuenta
 - Si el nombre sigue provisional o de trabajo, el brief lo dice y el wordmark se pide como exploración
-- **El brief para Claude Design / Figma Make.** Siempre pide **wordmark + isotipo** y trae: contexto en tres líneas, el tipo de logo elegido y por qué, los conceptos, referentes con nombre (diseñadores, no tendencias; suman las marcas del Paso 2 cuando aplican), reglas de construcción (módulo, trazo, correcciones ópticas, wordmark dibujado y no escrito con una fuente), color, la sección **"Clichés que hay que evitar"** con sus dos listas (del diseño hecho por IA y del rubro, formato en `anti-slop`) y qué entregar: grilla superpuesta, lockups sobre los fondos de la marca, versión a una tinta e invertida, prueba a 16 px y, si es app, el ícono a 1024 px, 60 pt y 29 pt
+- **El brief para la herramienta de diseño o el diseñador.** Siempre pide **wordmark + isotipo** y trae: contexto en tres líneas, el tipo de logo elegido y por qué, los conceptos, referentes con nombre (diseñadores, no tendencias; suman las marcas del Paso 2 cuando aplican), reglas de construcción (módulo, trazo, correcciones ópticas, wordmark dibujado y no escrito con una fuente), color, la sección **"Clichés que hay que evitar"** con sus dos listas (del diseño hecho por IA y del rubro, formato en `anti-slop`) y qué entregar: grilla superpuesta, lockups sobre los fondos de la marca, versión a una tinta e invertida, prueba a 16 px y, si es app, el ícono a 1024 px, 60 pt y 29 pt
 - **La revisión de cada vuelta** contra anti-slop (secciones 9, 17 y 21, más la prueba de tamaño) antes de que el usuario elija
 
 **Output:**
@@ -292,13 +292,13 @@ Para apps, agregar también: spacing scale (grid de 8pt), iconografía, estados 
 
 Si vive en un producto o espacio físico, agregar: lineamientos de empaque y señalética, fotografía de producto, do's & don'ts visuales.
 
-**Dónde vive el documento:** en el repo del proyecto, típicamente en `docs/design-system.md` o `brand/identity.md` según la naturaleza del repo (proyecto de código o proyecto de marca).
+**Dónde vive el documento:** es un documento propio del proyecto, en el formato que el usuario prefiera. Si el proyecto tiene repo, va ahí (por ejemplo en `docs/design-system.md`), para que Claude Code lo lea antes de tocar la interfaz.
 
 ---
 
 # Paso 7 — 📱 Pantallas clave (solo apps)
 
-Mockups de 3-5 pantallas principales en el chat (HTML) o en Figma. Antes de empezar, leer [`apps.md`](apps.md), sección 3: qué pantallas van, cómo se arman y su chequeo anti-slop.
+Mockups de 3-5 pantallas principales en el chat (HTML) o en la herramienta de diseño del usuario. Antes de empezar, leer [`apps.md`](apps.md), sección 3: qué pantallas van, cómo se arman y su chequeo anti-slop.
 
 Cada mockup se muestra, se discute, se ajusta. **Desde este punto se puede arrancar Claude Code**: el design system y las pantallas dan suficiente contexto para empezar a construir.
 
@@ -341,8 +341,8 @@ Si el proyecto no es app, este paso se omite.
 
 Al cerrar el branding, Claude debería ofrecer el siguiente paso según el contexto:
 
-- Si el branding es parte del arranque de un proyecto nuevo → continuar con el skill de arranque de proyectos si está instalado (repo, archivos, dominio, infra, App Store, lanzamiento)
-- Si era branding standalone para refrescar una marca existente → cerrar con el design system entregado en el repo del proyecto
+- Si es una marca nueva → lo que sigue fuera de la identidad: verificar y comprar dominio y @, registrar la marca y llevarla a sus primeras piezas reales (empaque, letrero, web o ficha de la tienda)
+- Si era branding standalone para refrescar una marca existente → cerrar con el design system entregado
 - Si el usuario quiere implementar las pantallas → arrancar Claude Code con el design system + mockups como contexto
 
 ---
@@ -350,6 +350,6 @@ Al cerrar el branding, Claude debería ofrecer el siguiente paso según el conte
 # Notas
 
 - El Design Sprint completo toma 1-2 sesiones de conversación
-- Para clientes externos, el output puede empacarse como entregable independiente en el repo del cliente
-- Las decisiones de marca se documentan en el repo del proyecto (por ejemplo en un `CONTEXT.md`)
+- Para clientes externos, el design system se entrega como un documento independiente para el cliente
+- Las decisiones de marca, con su porqué, quedan escritas junto al design system
 - Si el proyecto ya tiene branding parcial (ej. logo pero no paleta), arrancar desde el sub-paso que falte, no desde cero

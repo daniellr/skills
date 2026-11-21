@@ -69,10 +69,10 @@ Antes de entregar cualquier cosa visual o de copy, corre las que apliquen:
 - **Neón sobre negro** (fuerte). Cian cerca de `#00D4FF`, verde o fucsia 400, cinco acentos sin un foco. *En vez:* 70-30-10: un dominante, un secundario y un acento.
 - **Mancha borrosa o halo detrás de un H1 centrado** (fuerte). *En vez:* sacarlo.
 - **Paletas del rubro.** Navy con azul eléctrico en fintech, seguridad y B2B. Beige y tierra apagados en wellness y beauty. Rosado millennial y oro rosa.
-- **Neutros sin tocar.** `slate` o `zinc` de Tailwind, `#000` y `#FFF` puros por inercia. *En vez:* neutros teñidos con el tono de la marca, o el negro puro cuando tiene un trabajo (en Ply es el color de las piezas).
+- **Neutros sin tocar.** `slate` o `zinc` de Tailwind, `#000` y `#FFF` puros por inercia. *En vez:* neutros teñidos con el tono de la marca, o el negro puro cuando tiene un trabajo (en un reloj de ajedrez, es el color de las piezas).
 - **Gris sobre color, bajo contraste.** *En vez:* mínimo 4,5:1 en texto.
 - **Puntos de estado y badges sin estado real.** "Live", "New", "Active", "Verified" pulsando. *En vez:* atarlos a un estado de verdad o usar texto.
-- **Color sin significado.** Cinco o seis colores saturados al mismo volumen, o el azul de iOS por defecto. *En vez:* un acento con un solo significado. El amarillo de Halide marca lo activo; el rojo de Ply solo significa tiempo.
+- **Color sin significado.** Cinco o seis colores saturados al mismo volumen, o el azul de iOS por defecto. *En vez:* un acento con un solo significado. El amarillo de Halide marca lo activo; en un reloj de ajedrez, el rojo puede reservarse solo para el tiempo que se acaba.
 
 La segunda ola del color (crema con terracota, crema con verde bosque, casi negro con acento ácido) está en la sección 21.
 
@@ -222,7 +222,7 @@ Las reglas de Apple para la interfaz (Liquid Glass, componentes, patrones, acces
 - **Portmanteaus aliterados en CamelCase** (fuerte). VirtuVerse, CogniCreate. La IA los propone aunque se le prohíba la aliteración.
 - **Referencias obvias al rubro.** Turing o Lovelace para IA, y su equivalente en cada categoría.
 - **"AI" en el nombre.**
-- *En vez:* un nombre con una historia propia (DALA es LADA al revés; un *ply* es la jugada de un jugador), revisado contra App Store, dominio y registro de marca.
+- *En vez:* un nombre con una historia propia (una palabra al revés, o una palabra del oficio: en ajedrez, un *ply* es la jugada de un jugador), revisado contra App Store, dominio y registro de marca.
 
 ## 11. Identidad verbal
 
@@ -370,7 +370,7 @@ Ninguna está prohibida si el proyecto la justifica. Ninguna se usa sin una raz�
 
 1. **Decidir antes de generar.** El design system (o un `design.md`) fija 4 a 6 colores con nombre, rol y razón; las fuentes y su papel; el concepto de layout; radio, sombra y densidad; y una palabra de sensación. Va donde la herramienta lee instrucciones fijas: el `CLAUDE.md`, el brief, el Knowledge del proyecto.
 2. **Reglas que se puedan verificar mirando.** "Sombra dura sin blur" sirve; "padding generoso" no.
-3. **Partir del mundo del producto.** Su industria, sus materiales, sus objetos y su jerga. Flighty partió del tablero de salidas del aeropuerto; Halide de una cámara ("hicimos una cámara, no una app"); Ply del reloj de torneo y la pantalla partida.
+3. **Partir del mundo del producto.** Su industria, sus materiales, sus objetos y su jerga. Flighty partió del tablero de salidas del aeropuerto; Halide de una cámara ("hicimos una cámara, no una app"); una app de reloj de ajedrez puede partir del reloj de torneo y su pantalla partida.
 4. **Referentes de fuera del rubro y fuera del feed.** Libros, archivos, arquitectura, señalética, diseñadores con nombre (Kamekura, Crouwel). Dribbble y Pinterest son parte de donde sale el promedio. Se copian sistemas, no assets. Prueba: si alguien puede nombrar de dónde lo sacaste, tomaste demasiado.
 5. **La audacia en un solo lugar.** Una interacción firma o un elemento memorable, y el resto tranquilo y nativo. (Not Boring pone seis capas de feedback en un checkbox y deja los controles estándar al lado.) Antes de entregar, sacar un accesorio.
 6. **Color con significado.** Un dominante, un acento y neutros teñidos; cada color con un trabajo.
@@ -384,7 +384,7 @@ Ninguna está prohibida si el proyecto la justifica. Ninguna se usa sin una raz�
 
 # Cómo va en un brief
 
-Todo brief de identidad, pantallas o assets para Claude Design, Figma Make, Midjourney o Claude Code termina con esta sección, adaptada al encargo. Es el formato que ya usan los briefs de Ply:
+Todo brief de identidad, pantallas o assets para Claude Design, Figma Make, Midjourney o Claude Code termina con esta sección, adaptada al encargo:
 
 ```
 ## Clichés que hay que evitar
